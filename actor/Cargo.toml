@@ -1,0 +1,13 @@
+[package]
+name = "actor"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+minicov = { version = "0.2.2", default-features = false }
+
+[lib]
+# ensure generating .wasm file
+crate-type = ["cdylib"]
